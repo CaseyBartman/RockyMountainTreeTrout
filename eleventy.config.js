@@ -11,6 +11,8 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  const pathPrefix = process.env.PATH_PREFIX || "";
+
   return {
     dir: {
       input: ".",
@@ -20,8 +22,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_includes/layouts",
     },
     templateFormats: ["njk", "md", "html"],
-    // For GitHub Pages project sites: https://<user>.github.io/<repo>/
-    // This ensures {{ '...' | url }} outputs the correct base path
-    pathPrefix: "/RockyMountainTreeTrout",
+    // Use PATH_PREFIX for GitHub Pages project sites; empty for local/dev or custom domain root
+    pathPrefix,
   };
 };

@@ -32,6 +32,8 @@ jobs:
 
       - name: Build Eleventy
         run: npx eleventy
+        env:
+          PATH_PREFIX: /RockyMountainTreeTrout
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
