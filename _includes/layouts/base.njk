@@ -13,7 +13,12 @@
 
   <header class="navbar">
     <div class="container navbar-inner">
-      <div class="navbarlogo"><b><a href="{{ '/' | url }}">Rocky Mountain Tree Trout</a></b></div>
+      <div class="navbarlogo">
+        <a class="brand" href="{{ '/' | url }}">
+          <span class="brand-badge">RMTT</span>
+          <span class="brand-wordmark">Rocky Mountain Tree Trout</span>
+        </a>
+      </div>
       <nav class="navbarmenu">
         {% for item in site.nav %}
           <a href="{{ item.url | url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
