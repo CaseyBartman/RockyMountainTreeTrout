@@ -1,0 +1,12 @@
+{
+  "title": "Save the Rocky Mountain Tree Trout",
+  "description": "A satirical conservation site raising awareness for the elusive arboreal trout of the Rockies.",
+  "author": "Rocky Mountain Tree Trout Conservancy",
+  "nav": [
+    { "title": "Home", "url": "/" },
+    { "title": "News", "url": "/news/" },
+    { "title": "Sightings", "url": "/sightings/" },
+    { "title": "Donate", "url": "/donate/" },
+    { "title": "FAQs", "url": "/faqs/" }
+  ]
+}

@@ -1,1 +1,49 @@
-<h1>RockyMountainTreeTrout</h1>
+<h1>Rocky Mountain Tree Trout (Eleventy)</h1>
+<p>A satirical conservation site inspired by the &quot;Pacific Northwest Tree Octopus&quot;, focused on the elusive arboreal trout of the Rockies. Built with Eleventy.</p>
+<h2>Quick Start</h2>
+<ul>
+<li>Prerequisites: Node.js 18+</li>
+<li>Install dependencies:</li>
+</ul>
+<pre><code class="language-bash">npm install
+</code></pre>
+<ul>
+<li>Build the site:</li>
+</ul>
+<pre><code class="language-bash">npx eleventy
+</code></pre>
+<ul>
+<li>Run a local dev server:</li>
+</ul>
+<pre><code class="language-bash">npx eleventy --serve
+</code></pre>
+<p>The output is written to <code>_site/</code>. The dev server will watch for changes.</p>
+<h2>Project Structure</h2>
+<ul>
+<li><code>_includes/layouts/base.njk</code> — base HTML layout</li>
+<li><code>_data/site.json</code> — site metadata and navigation</li>
+<li><code>assets/css/styles.css</code> — palette and global styles</li>
+<li><code>index.njk</code> — homepage</li>
+<li><code>news/</code> — collection index + posts</li>
+<li><code>sightings/</code> — sightings page</li>
+<li><code>donate/</code> — donate/get involved page</li>
+<li><code>faqs/</code> — FAQs page</li>
+</ul>
+<h2>Color Palette</h2>
+<ul>
+<li>Sky: <code>#b4ccd8</code></li>
+<li>Sun: <code>#ffaa1c</code></li>
+<li>Amber: <code>#b57400</code></li>
+<li>Slate: <code>#44525f</code></li>
+<li>Pine: <code>#022b19</code></li>
+</ul>
+<p>Defined as CSS variables in <code>assets/css/styles.css</code> for easy theming.</p>
+<h2>Editing Content</h2>
+<ul>
+<li>Homepage sections live in <code>index.njk</code>.</li>
+<li>News posts are Markdown files in <code>news/</code> with front matter <code>tags: [news]</code>.</li>
+<li>Update navigation via <code>_data/site.json</code>.</li>
+<li>Adjust styles or layout in <code>assets/css/</code> and <code>_includes/layouts/</code>.</li>
+</ul>
+<h2>Notes</h2>
+<p>This project is intentionally playful—use it to spark curiosity about canopy ecology and forest stewardship.</p>
