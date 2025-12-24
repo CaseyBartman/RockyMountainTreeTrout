@@ -25,6 +25,32 @@ npx eleventy --serve
 
 The output is written to `_site/`. The dev server will watch for changes.
 
+## Deploy to GitHub Pages
+
+1. Create a new GitHub repository (public or private).
+2. Push this project to the repo:
+
+```bash
+git init
+git add .
+git commit -m "Initial Eleventy site"
+git branch -M main
+git remote add origin https://github.com/<YOUR_USER>/<YOUR_REPO>.git
+git push -u origin main
+```
+
+3. In your repo: Settings → Pages → Build and deployment → Source: GitHub Actions.
+	 - This repo includes a workflow at [.github/workflows/deploy.yml](.github/workflows/deploy.yml) that:
+		 - Installs dependencies
+		 - Builds with Eleventy
+		 - Publishes the `_site` folder to Pages
+
+4. After the first push to `main`, the workflow runs and your site will be available at the Pages URL shown in the Actions log and under Settings → Pages.
+
+Optional
+- Custom domain: configure under Settings → Pages (GitHub manages DNS instructions).
+- If you want to disable the dev server locally, just run `npx eleventy` to build once.
+
 ## Project Structure
 
 - `_includes/layouts/base.njk` — base HTML layout
