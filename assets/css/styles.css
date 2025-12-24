@@ -134,3 +134,91 @@ main .intro {
 .btn:hover {
 	filter: brightness(1.1);
 }
+
+/* Playful Navbar and Layout akin to octopus site */
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	background: var(--pine);
+	color: #eee;
+	font-size: 0.9rem;
+	border-bottom: 2px solid #000;
+}
+footer.navbar {
+	border-bottom: none;
+	border-top: 2px solid #000;
+}
+.navbar-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.navbar a {
+	color: #bdd;
+	font-weight: 700;
+}
+.navbar a:hover,
+.navbar a.active {
+	color: #fff;
+	text-decoration: none;
+}
+.navbarlogo {
+	white-space: nowrap;
+	font-weight: 800;
+}
+.navbarmenu a { margin-right: .5rem; }
+
+.skip-nav {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	background: #000;
+	color: #fff;
+	padding: .5rem 1rem;
+	border: 4px solid #bdd;
+	border-radius: .5rem;
+}
+.skip-nav:focus {
+	left: 1rem;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: 1fr minmax(220px, 260px) minmax(540px, 1fr) 1fr;
+	column-gap: 10px;
+	padding: 10px 0;
+}
+.sidebar { grid-column: 2 / 3; }
+.body { grid-column: 3 / 4; background: #fff; border: 2px solid rgba(0,0,0,.08); border-radius: .5rem; padding: 1rem; }
+.box { background: #fff; border: 1px solid rgba(0,0,0,.15); border-radius: .5rem; padding: .75rem; margin-bottom: .75rem; }
+.box h3 { border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: .25rem; }
+
+@media screen and (max-width: 900px) {
+	.layout { grid-template-columns: 1fr minmax(220px, 1fr) 1fr; }
+	.sidebar { grid-column: 2 / 3; }
+	.body { grid-column: 2 / 3; }
+}
+
+/* Footer links section */
+.site-links { background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: .5rem; padding: .75rem; }
+.site-links h3 { margin: 0 0 .5rem 0; }
+.site-links ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+.site-links a { color: var(--amber); }
+.site-links a:hover { color: var(--sun); }
+
+/* Ugly mode for homepage */
+.ugly {
+	background: repeating-linear-gradient(135deg, #b4ccd8 0, #b4ccd8 10px, #fff 10px, #fff 20px);
+	font-family: "Comic Sans MS", "Comic Neue", cursive, system-ui, sans-serif;
+}
+.ugly .hero { background: linear-gradient(180deg, var(--sun), var(--amber)); color: #000; box-shadow: 0 0 0 4px #000 inset; }
+.ugly .card { border: 3px dashed var(--amber); }
+.ugly .btn { background: #ff0; color: #000; border: 2px solid #000; }
+.photo-placeholder { border: 4px double #000; background: #eee; color: #333; text-align: center; padding: 1rem; margin: 1rem 0; }
