@@ -4,6 +4,5 @@
   { "title": "FAQs", "url": "/faqs/" },
   { "title": "Sightings", "url": "/sightings/" },
   { "title": "Media", "url": "/media/" },
-  { "title": "News", "url": "/news/" },
-  { "title": "Donate", "url": "/donate/" }
+  { "title": "News", "url": "/news/" }
 ]

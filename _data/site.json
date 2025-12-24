@@ -4,10 +4,14 @@
   "author": "Rocky Mountain Tree Trout Conservancy",
   "nav": [
     { "title": "About", "url": "/about/" },
-    { "title": "Help!", "url": "/help/" },
-    { "title": "FAQs", "url": "/faqs/" },
+    { "title": "Field Guide", "url": "/fieldguide/" },
     { "title": "Sightings", "url": "/sightings/" },
-    { "title": "Media", "url": "/media/" },
-    { "title": "Links", "url": "/links/" }
+    { "title": "Community Log", "url": "/sightings/community/" },
+    { "title": "Research", "url": "/research/" },
+    { "title": "Educators", "url": "/educators/" },
+    { "title": "Kids Guide", "url": "/activities/kids-guide/" },
+    { "title": "FAQs", "url": "/faqs/" },
+    { "title": "Help!", "url": "/help/" },
+    { "title": "Media", "url": "/media/" }
   ]
 }

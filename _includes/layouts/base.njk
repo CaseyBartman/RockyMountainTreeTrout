@@ -13,7 +13,7 @@
 
   <header class="navbar">
     <div class="container navbar-inner">
-      <div class="navbarlogo"><a href="{{ '/' | url }}">Rocky Mountain Tree Trout</a></div>
+      <div class="navbarlogo"><b><a href="{{ '/' | url }}">Rocky Mountain Tree Trout</a></b></div>
       <nav class="navbarmenu">
         {% for item in site.nav %}
           <a href="{{ item.url | url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
@@ -29,10 +29,6 @@
         <p>Become a Friend of the Rocky Mountain Tree Trout.</p>
         <p><a class="btn" href="{{ '/help/' | url }}">Help Save the Tree Trout</a></p>
       </div>
-      <div class="box">
-        <h3>Latest</h3>
-        <p>Read <a href="{{ '/news/' | url }}">news & updates</a>.</p>
-      </div>
     </aside>
     <main id="main" class="body">
       {% if page.intro %}
@@ -41,28 +37,5 @@
       {{ content | safe }}
     </main>
   </div>
-
-  <footer>
-    <div class="container">
-      <section class="site-links">
-        <h3>Links</h3>
-        <ul>
-          {% for item in footerLinks %}
-            <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
-    <div class="navbar">
-      <div class="container navbar-inner">
-        <div class="navbarinfo">&copy; {{ year }} {{ site.author }}</div>
-        <div class="navbarmenu">
-          {% for item in site.nav %}
-            <a href="{{ item.url | url }}">{{ item.title }}</a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
