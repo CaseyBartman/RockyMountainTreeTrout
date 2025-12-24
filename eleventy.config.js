@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  const pathPrefix = process.env.PATH_PREFIX || "";
+  const pathPrefix = process.env.PATH_PREFIX || "/RockyMountainTreeTrout";
 
   return {
     dir: {
