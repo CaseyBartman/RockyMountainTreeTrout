@@ -6,6 +6,7 @@
   <title>{{ title or site.title }}</title>
   <meta name="description" content="{{ description or site.description }}" />
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml" />
 </head>
 <body class="{% if ugly %}ugly{% endif %}">
   <a class="skip-nav" href="#main">Skip to content</a>

@@ -20,5 +20,8 @@ module.exports = function (eleventyConfig) {
       layouts: "_includes/layouts",
     },
     templateFormats: ["njk", "md", "html"],
+    // For GitHub Pages project sites: https://<user>.github.io/<repo>/
+    // This ensures {{ '...' | url }} outputs the correct base path
+    pathPrefix: "/RockyMountainTreeTrout",
   };
 };

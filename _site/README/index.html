@@ -18,6 +18,29 @@
 <pre><code class="language-bash">npx eleventy --serve
 </code></pre>
 <p>The output is written to <code>_site/</code>. The dev server will watch for changes.</p>
+<h2>Deploy to GitHub Pages</h2>
+<ol start="3">
+<li>
+<p>In your repo: Settings → Pages → Build and deployment → Source: GitHub Actions.</p>
+<ul>
+<li>This repo includes a workflow at <a href=".github/workflows/deploy.yml">.github/workflows/deploy.yml</a> that:
+<ul>
+<li>Installs dependencies</li>
+<li>Builds with Eleventy</li>
+<li>Publishes the <code>_site</code> folder to Pages</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After the first push to <code>main</code>, the workflow runs and your site will be available at the Pages URL shown in the Actions log and under Settings → Pages.</p>
+</li>
+</ol>
+<p>Optional</p>
+<ul>
+<li>Custom domain: configure under Settings → Pages (GitHub manages DNS instructions).</li>
+<li>If you want to disable the dev server locally, just run <code>npx eleventy</code> to build once.</li>
+</ul>
 <h2>Project Structure</h2>
 <ul>
 <li><code>_includes/layouts/base.njk</code> — base HTML layout</li>

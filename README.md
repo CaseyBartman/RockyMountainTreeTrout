@@ -26,19 +26,6 @@ npx eleventy --serve
 The output is written to `_site/`. The dev server will watch for changes.
 
 ## Deploy to GitHub Pages
-
-1. Create a new GitHub repository (public or private).
-2. Push this project to the repo:
-
-```bash
-git init
-git add .
-git commit -m "Initial Eleventy site"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USER>/<YOUR_REPO>.git
-git push -u origin main
-```
-
 3. In your repo: Settings → Pages → Build and deployment → Source: GitHub Actions.
 	 - This repo includes a workflow at [.github/workflows/deploy.yml](.github/workflows/deploy.yml) that:
 		 - Installs dependencies
